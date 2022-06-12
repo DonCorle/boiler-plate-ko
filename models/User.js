@@ -80,7 +80,6 @@ userSchema.methods.generateToken = function (cb) {
         cb(null, user)
     })
 }
-
 userSchema.statics.findByToken = function(token, cb) {
     var user = this;
     // user._id + ''  = token
@@ -94,9 +93,6 @@ userSchema.statics.findByToken = function(token, cb) {
         })
     })
 }
-
-userSchema.statics.findByToken = funtion(token, cb)
-
 const User = mongoose.model('User', userSchema)
 
 module.exports = { User }
